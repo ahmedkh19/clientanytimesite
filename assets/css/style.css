@@ -1,0 +1,86 @@
+:root {
+  --mainColor: #47AD3F;
+  --GrayColor: #fafafa;
+  --DarkGrayColor:#B5AFAF;
+  --SecColor: #2A3332;
+  --DarkSecColor: #151a19;
+}
+
+body{
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  font-size: 16px;
+  text-align: start !important;
+}
+
+.t{border: 2px solid #000}
+
+
+/* bootStrap Modified */
+.btn-outline-success {
+  color: var(--mainColor) !important;
+  border-color: var(--mainColor) !important;
+}
+.btn-outline-success:hover {
+  color: #fff !important;
+  background-color: var(--mainColor) !important;
+}
+
+.btn-success{
+  background-color: var(--mainColor) !important;
+  border-color: var(--mainColor) !important;
+}
+.btn-success:hover{
+  color: var(--mainColor) !important;
+  background-color: #fff !important;
+}
+
+.btn-dark {
+  background-color: var(--SecColor) !important;
+  border-color: var(--SecColor) !important;
+}
+.btn-dark:hover{
+  background-color: var(--DarkSecColor) !important;
+  border-color: var(--DarkSecColor) !important;
+}
+
+.form-control:focus,
+#input-3:focus{
+  border-color: var(--mainColor) !important;
+  box-shadow: 0 0 0 1px var(--mainColor) !important;
+}
+
+
+/* classes created  */
+.b-rounded{
+  border-radius: 25px;
+}
+.bg-GrayColor{
+  background-color: var(--GrayColor);
+}
+.mainFont{
+  color: var(--mainColor);
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+}
+.secFont{
+  font-weight: bold;
+  font-size: 18px;
+}
+.thrFont{
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+.mainColor{
+  color:var(--mainColor)
+}
+.DarkGrayColor{
+  color:var(--DarkGrayColor)
+}
+.postion-custom{
+  position: absolute;
+  bottom: -30px;
+  right: 60px;
+}
