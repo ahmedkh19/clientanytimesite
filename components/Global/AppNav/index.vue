@@ -2,7 +2,9 @@
   <b-container>
      <b-navbar toggleable="lg"  class="nav" >
       <b-navbar-brand href="#">
-        <img :src="require(`~/assets/logo/logo.png`)" class="logo"/>
+        <NuxtLink  to="/" >
+         <img :src="require(`~/assets/logo/logo.png`)" class="logo"/>
+        </NuxtLink>
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -10,16 +12,17 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="mx-auto">
           <NuxtLink  to="/" tag="li" exact class="nav-link">الرئيسية</NuxtLink >
-          <NuxtLink to="/2" tag="li" class="nav-link">من نحن</NuxtLink>
-          <NuxtLink to="/2" tag="li" class="nav-link">العملاء</NuxtLink>
-          <NuxtLink to="/2" tag="li" class="nav-link">مواقع ذات صلة</NuxtLink>
-          <NuxtLink to="/CallUs" tag="li" class="nav-link">اتصل بنا</NuxtLink >
+          <a href="#OurView" class="nav-link"> رؤيتنا</a>
+          <a href="#OurService" class="nav-link">خدمتنا</a>
+          <a href="#Cards" class="nav-link">الباقات</a>
+          <a href="#CallUs" class="nav-link">اتصل بنا</a>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="mr-auto">
-
-          <b-button size="sm" class="my-2 my-sm-2 mx-2 py-2 px-3" type="button" pill  variant="dark">انشاء حساب</b-button>
+          <NuxtLink  to="/signup">
+            <b-button size="sm" class="my-2 my-sm-2 mx-2 py-2 px-3" type="button" pill  variant="dark">انشاء حساب</b-button>
+          </NuxtLink >
           <b-button size="sm" class="my-2 my-sm-2 mx-2 py-2 px-3" type="button" pill  variant="outline-success" >تسجيل دخول</b-button>
 
 
@@ -28,6 +31,12 @@
      </b-navbar>
   </b-container>
 </template>
+
+<script>
+// import vueSmoothScroll from 'vue-smooth-scroll'
+// Vue.use(vueSmoothScroll)
+</script>
+
 
 <style scoped>
  .nav{

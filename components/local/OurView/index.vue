@@ -1,5 +1,5 @@
 <template>
- <div class="bg-GrayColor py-4">
+ <div class="bg-GrayColor py-4" id="OurView">
    <b-container>
       <p class="mainFont">رؤيتنا</p>
       <p class="text-center secFont">

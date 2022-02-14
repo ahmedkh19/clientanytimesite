@@ -5,7 +5,7 @@
       <div class="">
         <p class="Toptext">
           منصة
-          <sapn class="span">clientanytime</sapn>
+          <sapn class="mainColor">clientanytime</sapn>
         </p>
         <p class="secFont">
           هي منصة تقدم و تتخصص في خدمة المجيب الالي(Bot) للواتس اب و التي تمكن الأفراد و أصحاب المتاجر اللإلكترونية من الإجابة علي عدد كبير من العملاء (العملاء المحتملين) أليا كالرد علي استفسارتهم
@@ -20,7 +20,7 @@
       </div>
     </b-col>
     <b-col cols="10" sm="10"  md="8" lg="6" class="d-flex justify-content-center">
-      <img :src="require(`~/assets/img/Chatbot.svg`)" class="w-75">
+      <img :src="require(`~/assets/img/WhatsApp2.jpeg`)" class="w-75">
     </b-col>
   </b-row>
  </b-container>
@@ -36,9 +36,7 @@
   font-size: 35px;
   font-weight: bolder;
  }
- .Toptext .span{
-  color: var(--mainColor)
- }
+
  .LearnIcon{
    width: 30px;
    margin-right: 5px;

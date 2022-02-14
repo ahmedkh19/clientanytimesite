@@ -5,6 +5,9 @@
   --SecColor: #2A3332;
   --DarkSecColor: #151a19;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body{
   font-family: 'Cairo', sans-serif;

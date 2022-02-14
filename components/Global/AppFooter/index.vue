@@ -4,7 +4,9 @@
       <b-row align-h="center">
         <b-col cols="10" sm="10"  md="6" lg="6" class="mt-5">
           <div class="d-flex justify-content-center align-center-center">
-            <img :src="require(`~/assets/logo/logo.png`)" class="footerLogo">
+            <NuxtLink  to="/" >
+             <img :src="require(`~/assets/logo/logo.png`)" class="footerLogo">
+            </NuxtLink>
           </div>
         </b-col>
         <b-col cols="12" sm="12"  md="6" lg="6" class="mt-5">
@@ -35,10 +37,10 @@
       <div class="my-4">
         <b-navbar-nav class="d-flex justify-content-center flex-row mx-auto">
           <NuxtLink  to="/" tag="li" exact class="nav-link">الرئيسية</NuxtLink >
-          <NuxtLink to="/3" tag="li" class="nav-link">من نحن</NuxtLink>
-          <NuxtLink to="/3" tag="li" class="nav-link">العملاء</NuxtLink>
-          <NuxtLink to="/3" tag="li" class="nav-link">مواقع ذات صلة</NuxtLink>
-          <NuxtLink to="/CallUs" tag="li" class="nav-link">اتصل بنا</NuxtLink >
+          <a href="#OurView" class="nav-link"> رؤيتنا</a>
+          <a href="#OurService" class="nav-link">خدمتنا</a>
+          <a href="#Cards" class="nav-link">الباقات</a>
+          <a href="#CallUs" class="nav-link">اتصل بنا</a>
         </b-navbar-nav>
       </div>
       <div class="text-center my-4 DarkGrayColor">

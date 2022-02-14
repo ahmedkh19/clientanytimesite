@@ -1,5 +1,5 @@
 <template>
-  <b-container class="my-5">
+  <b-container class="my-5" id="Cards">
     <p class="mainFont">الباقات</p>
     <b-row align-h="center">
       <b-col cols="12" sm="10"  md="6" lg="5" class="px-5 my-4">
@@ -106,6 +106,7 @@
     </b-row>
   </b-container>
 </template>
+
 
 <style scoped>
  .icon{

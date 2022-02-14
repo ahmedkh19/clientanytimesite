@@ -1,5 +1,5 @@
 <template>
-  <b-container class="">
+  <b-container id="CallUs">
     <p class="mainFont">اتصل بنا</p>
     <b-row align-h="center">
       <b-col cols="11" sm="11"  md="10" lg="9" class="px-5 py-2 my-4 b-rounded shadow">
@@ -70,7 +70,7 @@
               </div>
             </div>
             <div class="d-flex justify-content-center w-100">
-                <img :src="require(`~/assets/img/Mobile Marketing.png`)" class="poster">
+                <img :src="require(`~/assets/img/WhatsApp1.jpeg`)" class="poster">
             </div>
           </b-col>
         </b-row>
