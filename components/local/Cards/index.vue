@@ -49,8 +49,9 @@
               <img :src="require(`~/assets/icon/right.png`)" class="icon">
             </div>
           </div>
-
-          <b-button size="sm" class="my-2 my-sm-2 mx-2 py-3 px-4 postion-custom secFont" type="button" pill  variant="success"> اشترك بالحزمة</b-button>
+          <NuxtLink  to="/payment">
+            <b-button size="sm" class="my-2 my-sm-2 mx-2 py-3 px-4 postion-custom secFont" type="button" pill  variant="success"> اشترك بالحزمة</b-button>
+          </NuxtLink>
         </div>
       </b-col>
       <b-col cols="12" sm="10"  md="6" lg="5" class="px-5 my-4">
@@ -100,7 +101,9 @@
               <img :src="require(`~/assets/icon/right.png`)" class="icon">
             </div>
           </div>
-          <b-button size="sm" class="my-2 my-sm-2 mx-2 py-3 px-4 postion-custom secFont" type="button" pill  variant="success"> اشترك بالحزمة</b-button>
+          <NuxtLink  to="/payment">
+            <b-button size="sm" class="my-2 my-sm-2 mx-2 py-3 px-4 postion-custom secFont" type="button" pill  variant="success"> اشترك بالحزمة</b-button>
+          </NuxtLink>
         </div>
       </b-col>
     </b-row>

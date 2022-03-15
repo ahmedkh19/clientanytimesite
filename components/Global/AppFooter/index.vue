@@ -37,10 +37,10 @@
       <div class="my-4">
         <b-navbar-nav class="d-flex justify-content-center flex-row mx-auto">
           <NuxtLink  to="/" tag="li" exact class="nav-link">الرئيسية</NuxtLink >
-          <a href="#OurView" class="nav-link"> رؤيتنا</a>
-          <a href="#OurService" class="nav-link">خدمتنا</a>
-          <a href="#Cards" class="nav-link">الباقات</a>
-          <a href="#CallUs" class="nav-link">اتصل بنا</a>
+          <NuxtLink to="/#OurView" class="nav-link"> رؤيتنا</NuxtLink>
+          <NuxtLink to="/#OurService" class="nav-link">خدمتنا</NuxtLink>
+          <NuxtLink to="/#Cards" class="nav-link">الباقات</NuxtLink>
+          <NuxtLink to="/#CallUs" class="nav-link">اتصل بنا</NuxtLink>
         </b-navbar-nav>
       </div>
       <div class="text-center my-4 DarkGrayColor">
