@@ -20,7 +20,7 @@
       </div>
     </b-col>
     <b-col cols="10" sm="10"  md="8" lg="6" class="d-flex justify-content-center">
-      <img :src="require(`~/assets/img/WhatsApp2.jpeg`)" class="w-75">
+      <img :src="require(`~/assets/img/WhatsApp2.jpeg`)" class="w-75" />
     </b-col>
   </b-row>
  </b-container>
