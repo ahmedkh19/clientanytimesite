@@ -71,14 +71,3 @@
  }
 </style>
 
-<script>
-  export default {
-    data() {
-      return {
-        text: `
-          نعم ....
-        `
-      }
-    }
-  }
-</script>
