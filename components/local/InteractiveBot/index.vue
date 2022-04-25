@@ -17,7 +17,9 @@
             </b-card-header>
             <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
               <b-card-body>
-                <b-card-text>{{ text }}</b-card-text>
+                <b-card-text>
+                  نعم يمكنك بسهولة إنشاء بوت تفاعلي بدون اي خبرة برمجية مع نظام (السحب والافلات) بتصميم بسيط، كما نوفر المساعدة في انشاء البوت لفترة محدودة
+                </b-card-text>
               </b-card-body>
             </b-collapse>
           </b-card>
@@ -28,7 +30,7 @@
             </b-card-header>
             <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
               <b-card-body>
-                <b-card-text>{{ text }}</b-card-text>
+                <b-card-text>نعم </b-card-text>
               </b-card-body>
             </b-collapse>
           </b-card>
@@ -39,18 +41,18 @@
             </b-card-header>
             <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
               <b-card-body>
-                <b-card-text>{{ text }}</b-card-text>
+                <b-card-text>نعم , يمكن ارسال الوسائط من تسجيل صوتي وصور ومقاطع فيديو الي اي شخص علي الواتساب</b-card-text>
               </b-card-body>
             </b-collapse>
           </b-card>
 
             <b-card no-body class="mb-2">
             <b-card-header header-tag="header" class="p-1" role="tab">
-              <b-button block v-b-toggle.accordion-3 variant="success">كم محادثة يستطيع البوت الرد عليها في نفس اللحظة ؟</b-button>
+              <b-button block v-b-toggle.accordion-3 variant="success">كم عدد المحادثات التي يستطيع البوت الرد عليها؟</b-button>
             </b-card-header>
             <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
               <b-card-body>
-                <b-card-text>{{ text }}</b-card-text>
+                <b-card-text>يستطيع البوت التعامل مع عدد لا محدود من المحادثات بسرعة فائقة ومع نظام حماية من قوي يحميك من الحظر</b-card-text>
               </b-card-body>
             </b-collapse>
           </b-card>
@@ -74,7 +76,7 @@
     data() {
       return {
         text: `
-          خان فين الرد
+          نعم ....
         `
       }
     }
