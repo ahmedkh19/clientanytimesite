@@ -5,7 +5,7 @@
       <div class="">
         <p class="Toptext">
           منصة
-          <sapn class="mainColor">clientanytime</sapn>
+          <!-- <sapn class="mainColor">clientanytime</sapn> -->
         </p>
         <p class="secFont">
           هي منصة تقدم و تتخصص في خدمة المجيب الالي(Bot) للواتس اب و التي تمكن الأفراد و أصحاب المتاجر اللإلكترونية من الإجابة علي عدد كبير من العملاء (العملاء المحتملين) أليا كالرد علي استفسارتهم

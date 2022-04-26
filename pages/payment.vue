@@ -1,23 +1,23 @@
 <template>
 
 <div>
-    <AppNav/>
+    <AppTop/>
     <Pay/>
     <br>
-    <AppFooter/>
+    <AppBottom/>
  </div>
 </template>
 
 <script>
-import AppNav from '@/components/Global/AppNav';
+import AppTop from '@/components/Global/AppTop';
 import Pay from '@/components/local/Pay';
-import AppFooter from '@/components/Global/AppFooter';
+import AppBottom from '@/components/Global/AppBottom';
 
 export default {
   components:{
-    AppNav,
+    AppTop,
     Pay,
-    AppFooter
+    AppBottom
   },
 }
 </script>

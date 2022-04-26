@@ -2,9 +2,9 @@
   <b-container>
      <b-navbar toggleable="lg"  class="nav" >
       <b-navbar-brand href="#">
-        <NuxtLink  to="/" >
+        <!-- <NuxtLink exact to="/" > -->
          <img :src="require(`~/assets/logo/logo.png`)" class="logo"/>
-        </NuxtLink>
+        <!-- </NuxtLink> -->
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>

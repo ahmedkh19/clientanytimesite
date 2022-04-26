@@ -1,6 +1,6 @@
 <template>
  <div>
-    <AppNav/>
+    <AppTop/>
     <Header/>
     <OurView/>
     <OurService/>
@@ -8,12 +8,12 @@
     <InteractiveBot />
     <Cards/>
     <CallUs/>
-    <AppFooter/>
+    <AppBottom/>
  </div>
 </template>
 
 <script>
-import AppNav from '@/components/Global/AppNav';
+import AppTop from '@/components/Global/AppTop';
 import Header from '@/components/local/Header';
 import OurView from '@/components/local/OurView';
 import OurService from '@/components/local/OurService';
@@ -21,11 +21,11 @@ import WhtsappLoopEx from '@/components/local/WhtsappLoopEx';
 import InteractiveBot from '@/components/local/InteractiveBot';
 import Cards from '@/components/local/Cards';
 import CallUs from '@/components/local/CallUs';
-import AppFooter from '@/components/Global/AppFooter';
+import AppBottom from '@/components/Global/AppBottom';
 
 export default {
   components:{
-    AppNav,
+    AppTop,
     Header,
     OurView,
     OurService,
@@ -33,7 +33,7 @@ export default {
     InteractiveBot,
     Cards,
     CallUs,
-    AppFooter
+    AppBottom
   },
 }
 </script>
