@@ -30,7 +30,7 @@
             </b-card-header>
             <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
               <b-card-body>
-                <b-card-text>نعم </b-card-text>
+                <b-card-text>نعم, يعمل بشكل مباشرة وامن ويحفظ لك جميع الخصوصية </b-card-text>
               </b-card-body>
             </b-collapse>
           </b-card>

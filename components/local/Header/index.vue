@@ -11,10 +11,10 @@
           هي منصة تقدم و تتخصص في خدمة المجيب الالي(Bot) للواتس اب و التي تمكن الأفراد و أصحاب المتاجر اللإلكترونية من الإجابة علي عدد كبير من العملاء (العملاء المحتملين) أليا كالرد علي استفسارتهم
         </p>
         <div class="btns">
-          <b-button size="sm" class="my-2 my-sm-2 mx-2 py-3 px-3" type="button" pill  variant="dark">قم بالاشتراك الان</b-button>
-          <b-button size="sm" class="my-2 my-sm-2 mx-2 py-2 px-3" type="button" pill  variant="outline-success" >
-            تعلم المزيد
-            <img :src="require(`~/assets/icon/Learn More icon.png`)" class="LearnIcon"/>
+          <b-button size="sm" class="my-2 my-sm-2 mx-2 py-2 px-5 font-weight-bold" type="button" pill  variant="dark" v-b-tooltip.hover title="انقر لتصفح ال documentation لتعلم المزيد ...."> وثائق API</b-button>
+          <b-button size="sm" class="my-2 my-sm-2 mx-2 py-2 px-5 font-weight-bold" type="button" pill  variant="outline-success" v-b-tooltip.hover title="فترة تجربية لمدة 5 أيام">
+            <!-- <img :src="require(`~/assets/icon/Learn More icon.png`)" class="LearnIcon"/> -->
+            تجربة مجانية
           </b-button>
         </div>
       </div>

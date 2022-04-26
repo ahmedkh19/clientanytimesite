@@ -50,7 +50,7 @@
             </div>
           </div>
           <NuxtLink  to="/payment">
-            <b-button size="sm" class="my-2 my-sm-2 mx-2 py-3 px-4 postion-custom secFont" type="button" pill  variant="success"> اشترك بالحزمة</b-button>
+            <b-button size="sm" class="my-2 my-sm-2 mx-2 py-3 px-4 postion-custom secFont" type="button" pill  variant="success" v-b-tooltip.hover title="فترة تجربية لمدة 5 أيام"> ابدء الفترة التجربية مجانا</b-button>
           </NuxtLink>
         </div>
       </b-col>
@@ -102,7 +102,7 @@
             </div>
           </div>
           <NuxtLink  to="/payment">
-            <b-button size="sm" class="my-2 my-sm-2 mx-2 py-3 px-4 postion-custom secFont" type="button" pill  variant="success"> اشترك بالحزمة</b-button>
+            <b-button size="sm" class="my-2 my-sm-2 mx-2 py-3 px-4 postion-custom secFont" type="button" pill  variant="success" v-b-tooltip.hover title="فترة تجربية لمدة 5 أيام"> ابدء الفترة التجربية مجانا</b-button>
           </NuxtLink>
         </div>
       </b-col>
