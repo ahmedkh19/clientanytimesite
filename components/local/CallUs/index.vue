@@ -4,13 +4,13 @@
     <b-row align-h="center">
       <b-col cols="11" sm="11"  md="10" lg="9" class="px-5 py-2 my-4 b-rounded shadow">
         <b-row align-h="center">
-          <b-col cols="10" sm="10"  md="6" lg="6" class="p-3">
+          <!-- <b-col cols="10" sm="10"  md="6" lg="6" class="p-3">
              <b-form @submit="onSubmit" @reset="onReset" v-if="show">
 
                <b-form-group id="input-group-3" label="سبب التواصل" label-for="input-3">
                 <b-form-select
                   id="input-3"
-                  v-model="form.reson"
+                  v-model="form.contactReason"
                   :options="resons"
                   required
                 ></b-form-select>
@@ -19,7 +19,7 @@
                <b-form-group id="input-group-2" label="رقم الجوال" label-for="input-2">
                 <b-form-input
                   id="input-2"
-                  v-model="form.number"
+                  v-model="form.phoneNumber"
                   placeholder="ادخل رقم الجوال"
                   type="number"
                   required
@@ -53,10 +53,10 @@
                 ></b-form-textarea>
               </b-form-group>
 
-              <b-button size="sm" class="my-2 my-sm-2 mx-2 py-1 px-2 secFont w-100" type="button" variant="success">ارسال طلب اتصال</b-button>
+              <b-button size="sm" class="my-2 my-sm-2 mx-2 py-1 px-2 secFont w-100" type="button" variant="success" v-on:click="onSubmit">ارسال طلب اتصال</b-button>
             </b-form>
 
-          </b-col>
+          </b-col> -->
           <b-col cols="11" sm="11"  md="6" lg="6" class="p-3">
             <p class="text-center secFont">وسائل التواصل</p>
             <div class="d-flex flex-column justify-content-start align-items-center w-100">
@@ -81,13 +81,14 @@
 
 
 <script>
+import axios from "axios";
   export default {
     data() {
       return {
         form: {
           email: '',
-          number: '',
-          reson: null,
+          phoneNumber: '',
+          contactReason: null,
           message: ''
         },
         resons: [{ text: 'التواصل مع إدارة الموقع', value: null }, 'سبب 1', 'سبب 2', 'سبب 4', 'سبب 3'],
@@ -97,14 +98,26 @@
     methods: {
       onSubmit(event) {
         event.preventDefault()
-        alert(JSON.stringify(this.form))
+        console.log(JSON.stringify(this.form))
+        axios
+          .post(`${process.env.apiURL}/contactus`, JSON.stringify(this.form))
+          .then((res) => {
+            console.log(res);
+            console.log(res.status);
+            this.resCase = res.status;
+            this.warning = "";
+          })
+          .catch((error) => {
+            console.log(error);
+            this.resErorr = error;
+          });
       },
       onReset(event) {
         event.preventDefault()
         // Reset our form values
         this.form.email = ''
-        this.form.number = ''
-        this.form.reson = null
+        this.form.phoneNumber = ''
+        this.form.contactReason = null
         this.form.message = ''
         // Trick to reset/clear native browser form validation state
         this.show = false
